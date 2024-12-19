@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+
+section.section {
+    margin: 0;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    gap: 40px;
+    align-items: center; 
+}
+
+@media (max-width: 667px) {
+    .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.homePage {
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.logo1Branche {
+    padding: 0px;
+    margin-right: 5rem;
+    width: 20rem;
+    height: 25rem;
+    justify-content: left;
+}
+
+.rightContentHomePage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+@media (max-width: 1080px){
+.logo1Branche{
+    display: none;
+}}
+
+.treeIconHomePage {
+    width:  20rem;
+    height: 15rem;
+}
+
+@media (max-width: 1080px){
+.treeIconHomePage {
+    display: none;
+}}
+
+.seeMore {
+    text-decoration: none;
+    
+}
+
+.museumWithPeople {
+    width: 100%;
+    outline-color: #D4B25B;
+    display: block;
+    max-width: 100%;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    background: #f3f3f3;
+}
+
+.expositions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+
+.expositionText {
+    display: flex;
+    flex-direction: column;
+}
+
+.museumExpositions {
+    width: 40%; 
+    max-width: 100%; 
+    display: flex; 
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+@media (max-width: 667px){
+    .museumExpositions {
+        width: 100%;
+    }
+}
+
+.giraffeImg {
+    width: 150px;
+    position: absolute;
+    left: -50px;
+    bottom: -50px;
+    transform: rotate(15deg);
+    z-index: -15000;
+}
+
+.rinhoPricing {
+    width: 150px;
+    position: absolute;
+    right: 100px;
+    top: 150px;
+}
+
+@media (max-width: 667px){
+    .rinhoPricing{
+    display: none;
+}}
+
+@media (max-width: 1080px){
+.giraffeImg {
+    display: none;
+
+}}
+
+
+.left-arrow {
+    position: absolute;
+    left: 10px;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 10px;
+}
+
+@media (max-width: 667px) {
+    .carousel-item {
+    flex: 0 0 200px;
+    }
+}
+
+.participer-soutenir {
+    background-color: #f3f3f3;
+}
+
+@media (max-width: 990px) {
+    .participer-soutenir .flex {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 667px) {
+    .footer .flex{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 667px) {
+    .footer .first-row .flex{
+        width: fit-content;
+    }
+}
+
+
+.texte {
+    flex: 1; 
+}
+
+
+@media (max-width: 667px){
+    .image_equipe{
+        margin-top: 10px;
+    }
+}
+
+.image_equipe img {
+    max-width: 100%;
+    height: auto;
+}
+
+.news{
+    padding: 10px;
+}
+
+/* CAROUSEL */
+
+.carousel img {
+    max-width: 100%;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
+
+
+/********************************
+* Breakpoints
+*********************************/
+@media screen and (min-width: 576px) {
+    .carousel-item {
+        flex-basis: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carousel-item {
+        flex-basis: 325px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .carousel-item {
+        flex-basis: 450px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    body,
+    button,
+    input,
+    select,
+    optgroup,
+    textarea {
+        font-size: 1.25rem;
+    }
+}
+
+*/
+
+.actus{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.actu-1{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 40%;
+    width: 40%;
+}
+
+.actu-2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 40%;
+    width: 40%;
+}
+
+.actu-3{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 40%;
+    width: 40%;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+svg {
+    fill: currentColor;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.card {
+    border: 1px solid #bac6d3;
+    border-radius: 8px;
+    padding: 1rem;
+}
+/* FIN CAROUSEL */
+
+.paiement-horaires{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.textp1{
+    margin-right: 30px;
+}
+
+.plus-d-offre {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 800px) {
+    .plus-d-offre {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        text-align: center; 
+    }
+    .plus-d-offre img {
+        margin: 0 auto; 
+        display: block; 
+        max-width: 100%; 
+        height: auto; 
+    }
+    .offreText{
+        margin-bottom: 20px;
+    }
+}
+
+.offreText {
+    display: flex;
+    flex-direction: column;
+}
+
+.museumTarif {
+    width: 35%; 
+    max-width: 70%; 
+    display: flex; 
+    justify-content: flex-end; 
+    margin-left: auto;
+}
+
+@media (max-width: 800px){
+    .museumTarif{
+        width: 70%; 
+        display: flex; 
+        justify-content: flex-end; 
+    }
+}
+
+.mobileMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mobileMenu button {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+@media (max-width: 803px){
+.mobileMenu button{
+    display: flex;
+}}
+
+
+[popover] {
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 150px;
+    width: 300px;
+    transition: transform .2s ease-out, opacity .2s ease-out,
+    display .2s ease-out;
+    transition-behavior: allow-discrete;
+
+    /*POPOVER EN ETAT FERMÉ*/
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+[popover]:popover-open {
+    @starting-style {/*POPOVER AVANT L'ENTREE DANS LE CHAMP*/
+    opacity: 0;
+    transform: translateX(-50px);
+    }
+
+    /*POPOVER EN ETAT OUVERT*/
+    opacity: 1;
+    transform: translateX(0px);
+    height: 240px
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #cacaca;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+
+tbody tr {
+    background-image: url(noise.png);
+}
+
+table {
+    background-color: #ffffff;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+.tarifs{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+body.night-mode {
+    background-color: #1e1e1e;
+    color: #a5a5a5;
+}
